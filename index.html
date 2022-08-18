@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>Encriptador</title>
+</head>
+<body>
+    <header>
+        <img class="logo" src="./imagenes/logo-alura.jpg" alt="logo-alura">
+        <h1 class="titulo">Encriptador</h1>
+    </header>
+
+    <div class="main">
+        <section class="seccion-izq">
+            <div class="texto-izq-container">
+                <textarea id="campo-texto" class="campo-texto" cols="30" rows="12" autofocus placeholder="Ingrese el texto aqui"></textarea>
+                <p><span>&#9888;</span> Sólo letras <span class="resaltado">minúsculas</span> y <span class="resaltado">sin acentos</span></p>
+            </div>
+            
+            <div class="btn-container">
+                <button type="button" id="btn-encriptar" class="btn btn-encriptar">Encriptar!</button>
+                <button type="button" id="btn-desencriptar" class="btn btn-desencriptar">Desencriptar!</button>
+                <button type="button" id="btn-adaptar" class="btn btn-adaptar">Adaptar!</button>
+            </div>
+        </section>
+
+        <section class="seccion-der">
+            <div id="panel-uno" class="panel-uno">
+                <div class="">
+                    <img src="./imagenes/imagen.png" alt="imagen-cifrado"> <!--ACA VA MUNECO.PNG!!!!!!!!!-->
+                </div>
+                <p class="texto1-panel-uno">Ningún mensaje fue encontrado</p>
+                <p class="texto2-panel-uno">Ingresa el texto que desees encriptar o desencriptar.</p>
+            </div>
+
+            <div id="panel-dos" class="panel-dos oculto">
+                <textarea class="msj-encriptado" id="msj-encriptado" readonly></textarea>
+                <button type="button" id="btn-copiar" class="btn btn-copiar">Copiar</button>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p><span>&copy;</span> Copyright - Nicolás Huanca 2022 - <a href="https://www.github.com/nicolas2289h" target="_blank">Github</a></p>
+    </footer>
+
+    <script src="encriptador.js"></script>
+</body>
+</html>
+
+
+<!--
+- Título de su sitio web
+- Campo para el texto que va a ser encriptado/desencriptado
+- Un botón para encriptar
+- Un botón para desencriptar
+- Área para mostrar el texto encriptado/desencriptado.
+-->
